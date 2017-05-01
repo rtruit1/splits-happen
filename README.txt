@@ -14,7 +14,7 @@ The second thing that I did that I thought was pretty interesting, although it p
 
 TODO:: 
 
-- Need to finish the final frame, to make sure it can handle 3 balls instead of two.  
+- The values can be entered for the final frame, but it doesn't compute properly. I have a feeling that is has something to do with the scorecard testing, but i didn't have enough time to finish troubleshooting    
 - Might want to be able to handle multiple bowlers per lane 
 
 

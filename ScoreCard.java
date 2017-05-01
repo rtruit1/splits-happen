@@ -22,43 +22,34 @@ public class ScoreCard {
 		int sum=0; 
 		for(int i=0; i<charMap.size(); i++){
 			if(charMap.get(i) =='x'&& i<8){
-				System.out.println("Found a Strike");
 				sum = sum+scoreMap.get(i)+scoreMap.get(i+1)+scoreMap.get(i+2);
 			}
 			else if(charMap.get(i) == '/' && i<8){
-				System.out.println("found a spare");
 				sum = sum+scoreMap.get(i)+scoreMap.get(i+1);
 			}
 			else if(charMap.get(i) == '-' && i<8){
-				System.out.println("found a normal operator");
 				sum = sum+scoreMap.get(i);
 			}
 			
 			else if(i == 8 || i== 9){
 				if(charMap.get(i) == 'x' && i == 8){
-					System.out.println("Found a strike");
 					sum = sum+scoreMap.get(i);
 				}
 				else if(charMap.get(i) == 'x' && i == 9){
-					System.out.println("Found a strike");
 					sum = sum+scoreMap.get(i);
 				}
 				
 				if(charMap.get(i) == '/' && i == 8){
-					System.out.println("Found a spare");
 					sum = sum+scoreMap.get(i);
 				}
 				else if(charMap.get(i) == '/' && i == 9){
-					System.out.println("Found a spare");
 					sum = sum+scoreMap.get(i);
 				}
 				
 				if(charMap.get(i) == '-' && i == 8){
-					System.out.println("Found a normal");
 					sum = sum+scoreMap.get(i);
 				}
 				else if(charMap.get(i) == '-' && i == 9){
-					System.out.println("Found a normal");
 					sum = sum+scoreMap.get(i);
 				}
 			}
