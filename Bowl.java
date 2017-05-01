@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Bowl {
 	Scanner input = new Scanner(System.in);
-	Player player = new Player(); 
+	
 	ScoreCard scoreCard = new ScoreCard(); 
 	
 	public void bowlFrame(){

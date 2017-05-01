@@ -5,11 +5,12 @@ public class Main {
 		
 		Bowl bowling = new Bowl(); 
 		
-		for(int i=0; i<=8; i++){
+		for(int i=0; i<10; i++){
 			bowling.bowlFrame(); 
 		}
 		bowling.bowlLastFrame(); 
-		
+		System.out.println(); 
+		System.out.println(); 
 		System.out.println("Final Score is: "+bowling.computeScore()); 
 	}
 }
